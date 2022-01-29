@@ -1,0 +1,18 @@
+body {
+    background-color: rgb(6, 160, 6);
+}
+a {
+    font-style: oblique;
+    color: white;
+    font-size: 150%;
+}
+p {
+    color: white;
+    font-size: 150%;
+}
+button {
+    color: white;
+    background-color: black;
+    font-size: 120%;
+    font-style: oblique;
+}
