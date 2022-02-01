@@ -28,8 +28,12 @@ class Auto extends Veicolo {
     descrizioneAuto() {
         console.log(super.descrizioneVeicolo()+', con targa '+this.targa+' e con marca '+this.marca);
     }
-    guidaAuto(nuovaAuto) {
-        console.log('Stai guidando questa auto: '+nuovaAuto);
+    guidaAuto(marcaAuto) {
+        console.log('Stai guidando auto '+marcaAuto);
+    }
+    casualeKm() {
+        let num = Math.round(Math.random() * 100);
+        console.log("La tua auto " +this.marca+ " ha totalizzato " +num+ " Km");
     }
 
 }
@@ -45,8 +49,9 @@ function test() {
     var v=document.getElementById("Veicolo_txt").value;
 
     const newVeicol = new Auto(r, v, t, m);
-    console.log(newVeicol.marca);
     newVeicol.descrizioneAuto();
+    newVeicol.guidaAuto(newVeicol.marca);
+    newVeicol.casualeKm();
 }
 
 
