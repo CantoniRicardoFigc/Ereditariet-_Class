@@ -1,24 +1,19 @@
 class Veicolo {
-
     constructor(ruote, veicolo) {
         this.ruote=ruote;
         this.veicolo=veicolo;
     }
-
     descrizioneVeicolo() {
         return ('Questo è un veicolo '+this.veicolo+', con '+this.ruote+' ruote');
     }
-
 }
 
 class Auto extends Veicolo {
-
     constructor(ruote, veicolo, targa, marca) {
         super(ruote, veicolo);
         this.targa=targa;
         this.marca=marca;
     }
-
     get Ruote() {
         return this._ruote;
     }
@@ -35,7 +30,6 @@ class Auto extends Veicolo {
         let num = Math.round(Math.random() * 100);
         console.log("La tua auto " +this.marca+ " ha totalizzato " +num+ " Km");
     }
-
 }
 
 if (document.getElementById("btnLog") != null) {
