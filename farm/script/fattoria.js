@@ -19,7 +19,7 @@ export default class Fattoria {
     }
 
     cGallo() {
-        var gallo = new Animale("Gallo", "Andalusa", "2 zampe", "/farm/img/gallo_farm.jpg")
+        var gallo = new Animale("Gallo", "Andalusa", "2 zampe", "/farm/img/gallo_farm.jpg", "chicchirichì")
         document.getElementById("iGa").src = gallo.img_url;
         document.getElementById("tGa").innerHTML = gallo.tipo;
         document.getElementById("rGa").innerHTML = gallo.razza;
@@ -27,7 +27,7 @@ export default class Fattoria {
     }
 
     cMaiale() {
-        var maiale = new Animale("Maiale", "Europeo", "4 zampe", "/farm/img/piggy_farm.jpg")
+        var maiale = new Animale("Maiale", "Europeo", "4 zampe", "/farm/img/piggy_farm.jpg", "oincoinc")
         document.getElementById("iMa").src = maiale.img_url;
         document.getElementById("tMa").innerHTML = maiale.tipo;
         document.getElementById("rMa").innerHTML = maiale.razza;
@@ -35,7 +35,7 @@ export default class Fattoria {
     }
     
     cMucca() {
-        var mucca = new Animale("Mucca", "Italiana", "4 zampe", "/farm/img/cow_farm.jpg")
+        var mucca = new Animale("Mucca", "Italiana", "4 zampe", "/farm/img/cow_farm.jpg", "muuuuu")
         document.getElementById("iMu").src = mucca.img_url;
         document.getElementById("tMu").innerHTML = mucca.tipo;
         document.getElementById("rMu").innerHTML = mucca.razza;

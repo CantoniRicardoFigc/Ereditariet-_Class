@@ -7,7 +7,7 @@ export default class Clock {
     document.getElementById("btn").addEventListener('click', this.start)
   }
 
-  render= ()=> {
+  render = ()=> {
     let date = new Date();
   
     let hours = date.getHours();
